@@ -23,8 +23,8 @@ CREATE PROCEDURE usp_CustomerCreate
 	   @date_of_birth date,
 	   @gender varchar(20)
 	   @address varchar(55),
-	   @city	varchar(20),
-	   @state	varchar(20),
+	   @city varchar(20),
+	   @state varchar(20),
 	   @phone int
 	 
 AS
@@ -101,8 +101,8 @@ BEGIN
  
 UPDATE Customer
 SET  name = @name,
-		date_of_birth = @date_of_birth,
-		gender = @gender,
+	   date_of_birth = @date_of_birth,
+	   gender = @gender,
 	   address = @address,
 	   city	= @city,
 	   state = @state,
