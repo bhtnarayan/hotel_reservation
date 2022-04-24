@@ -3,10 +3,12 @@
 CREATE TABLE [dbo].[Customer](
        [customer_id] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	   [name] [varchar](20) NOT NULL,
+	   [date_of_birth] date NOT NULL,
+	   [gender] varchar(20) NOT NULL,
 	   [address] [varchar](55) NOT NULL,
-       [city] [varchar](20) NOT NULL,
-       [state] [varchar](20) NOT NULL,
-       [phone] [int] NOT NULL
+       	   [city] [varchar](20) NOT NULL,
+           [state] [varchar](20) NOT NULL,
+           [phone] [int] NOT NULL
  
 ) 
 --create --
